@@ -136,11 +136,6 @@ input[type=submit] {
   font-weight: 700;
 }
 
-footer {
-  font-size: 1.7rem;
-  margin-bottom: 75px;
-}
-
 .links {
   border: 2px black solid;
   border-radius: 15px;
@@ -159,4 +154,21 @@ article p {
 
 #a1, #a2 {
   color: black;
+}
+
+#member_submit {
+  cursor: pointer;
+}
+
+footer {
+  font-size: 1.7rem;
+  margin-bottom: 75px;
+}
+
+footer a {
+  color: black;
+}
+
+footer :hover, article a:hover {
+  text-decoration: none;
 }
