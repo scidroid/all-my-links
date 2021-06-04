@@ -30,7 +30,7 @@
   <body>
     <header>
       <figure>
-        <img src="./avatar.png" alt="SciDroid avatar" />
+        <img src="https:/link.scidroid.me/avatar.png" alt="SciDroid avatar" />
       </figure>
       <h1>@SciDroid <i class="fas fa-check-circle" style="color: aqua"></i></h1>
       <p>Web Dev</p>
@@ -90,51 +90,46 @@
       </nav>
     </header>
     <main>
-      <section class="links blog">
+      <section class="blog">
         <h2>BlogPosts</h2>
       </section>
-      <section class="links">
+      <section>
         <h2>Links</h2>
-        <a href="https://scidroid.me/" target="_blank" rel="noopener noreferrer"
+        <a href="https://scidroid.me/" class="links" target="_blank" rel="noopener noreferrer"
           >Portfolio</a
-        ><a href="https://dev.to/scidroid" target="_blank" rel="noopener noreferrer"
+        ><a href="https://dev.to/scidroid" target="_blank" class="links" rel="noopener noreferrer"
           >Blog</a
         ><a
           href="https://scidroid.me/estructura"
           target="_blank"
+          class="links"
           rel="noopener noreferrer"
           >Estructura HTML</a
         ><a
           href="https://platzi.com/r/scidroid"
           target="_blank"
+          class="links"
           rel="noopener noreferrer"
           >1 aditional free month Platzi</a
         >
       </section>
-      <section id="newsletter">
+      <article id="newsletter">
         <h2>Subscribe to the newsletter!</h2>
-        <form action="https://r.scidroid.me/add_subscriber" name="newsletter-form" method="post" target="_blank">
+        <form action="https://r.scidroid.me/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank">
           <div class="form-group">
-          <label for="name">Name</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            autocomplete="name"
-            placeholder="Sofía"
-          /></div><div class="form-group">
-          <label for="email">Email</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            autocomplete="email"
-            placeholder="scidroid@scidroid.me"
-            required
-          /><div class="form-group">
-          <input type="submit" id="submit" value="Submit">
-        </form>
-      </section>
+            <label for="member_email">Email address</label>
+            <input class="revue-form-field" placeholder="Your email address..." type="email" name="member[email]" id="member_email">
+          </div>
+          <div class="form-group">
+            <label for="member_first_name">First name <span class="optional">(Optional)</span></label>
+            <input class="revue-form-field" placeholder="First name... (Optional)" type="text" name="member[first_name]" id="member_first_name">
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Subscribe" name="member[subscribe]" id="member_submit">
+          </div>
+          <p>By subscribing, you agree with Revue’s <a id="a1" target="_blank" href="https://www.getrevue.co/terms">Terms of Service</a> and <a target="_blank" id="a2" href="https://www.getrevue.co/privacy">Privacy Policy</a>.</p>
+          </form>
+      </article>
     </main>
     <footer>
       <p>
