@@ -23,7 +23,7 @@ body {
 
 header {
   justify-self: center;
-  background-color: white;
+  background-color: #F7F7F7;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -81,9 +81,9 @@ nav li a {
   font-size: 2rem;
 }
 
-section {
+section, article {
   justify-self: center;
-  background-color: white;
+  background-color: #F7F7F7;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -95,9 +95,10 @@ section {
   margin: 15px;
 }
 
-section h2 {
-    text-align: center;
-    font-size: 2.2rem;
+article h2, section h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin: 5px;
 }
 
 section a {
@@ -107,32 +108,55 @@ section a {
   color: black;
   text-align: center;
   text-decoration: none;
-  border: 2px black solid;
-  border-radius: 15px;
   font-weight: 700;
 }
 
-#newsletter form, .form-group {
-    display: flex;
-    flex-direction: column;
+#newsletter form,
+.form-group {
+  display: flex;
+  flex-direction: column;
 }
 
 .form-group {
-    margin: 5px;
-    font-size: 2.2rem;
-    font-weight: 700;
-    text-align: center;
+  margin: 5px;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
 }
 
 .form-group input {
-    border: 2px black solid;
-    border-radius: 15px;
-    padding: 10px;
-    font-size: 2rem;
-    background-color: white;
+  border: 2px black solid;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 2rem;
+  background-color: #F7F7F7;
+}
+
+input[type=submit] {
+  font-weight: 700;
 }
 
 footer {
   font-size: 1.7rem;
   margin-bottom: 75px;
+}
+
+.links {
+  border: 2px black solid;
+  border-radius: 15px;
+  transition: transform 500ms ease-in-out 25ms;
+}
+
+.links:hover{
+  transform: translatey(-5px);
+}
+
+article p {
+  font-size: 2rem;
+  text-align: center;
+  margin: 5px;
+}
+
+#a1, #a2 {
+  color: black;
 }
