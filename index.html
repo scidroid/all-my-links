@@ -19,36 +19,122 @@
       property="twitter:image"
       content="https://link.scidroid.me/avatar.png"
     />
-    <link rel="shortcut icon" href="avatar.png" />
+    <link rel="shortcut icon" href="https://link.scidroid.me/avatar.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>SciDroid's links</title>
   </head>
   <body>
     <header>
       <figure>
-        <img src="avatar.png" alt="SciDroid avatar" />
+        <img src="https:/link.scidroid.me/avatar.png" alt="SciDroid avatar" />
       </figure>
       <h1>@SciDroid <i class="fas fa-check-circle" style="color: aqua"></i></h1>
-    </header>
-    <main>
+      <p>Web Dev</p>
+
       <h2>
         Hi, I'm SciDroid, a fullstack web developer, and Data Scientist in
-        progress. Visit my links to reach out with me.
+        progress.
       </h2>
-      <a class="buttons" id="gh" href="https://github.com/scidroid"
-        ><i class="fab fa-github"></i> GitHub</a
-      >
-      <a class="buttons" id="dv" href="https://dev.to/scidroid"
-        ><i class="fab fa-dev"></i> Dev.To</a
-      >
-      <a class="buttons" id="wb" href="https://scidroid.me"
-        ><i class="fas fa-laptop-code"></i> Web</a
-      >
-      <a class="buttons" id="tw" href="https://twitter.com/scidroid"
-        ><i class="fab fa-twitter"></i> Twitter</a
-      >
-      <a class="buttons" id="em" href="mailto:scidroid@scidroid.me"
-        ><i class="far fa-envelope"></i> Email</a
-      >
+      <nav>
+        <ul>
+          <li>
+            <a
+              class="buttons"
+              id="gh"
+              style="color: #211f1f"
+              href="https://github.com/scidroid"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              class="buttons"
+              id="dv"
+              style="color: #0a0a0a"
+              href="https://dev.to/scidroid"
+              ><i class="fab fa-dev"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              class="buttons"
+              id="wb"
+              style="color: black"
+              href="https://scidroid.me"
+              ><i class="fas fa-laptop-code"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              class="buttons"
+              id="tw"
+              style="color: #00acee"
+              href="https://twitter.com/scidroid"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              class="buttons"
+              id="em"
+              style="color: black"
+              href="mailto:scidroid@scidroid.me"
+              ><i class="far fa-envelope"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="links blog">
+        <h2>BlogPosts</h2>
+      </section>
+      <section class="links">
+        <h2>Links</h2>
+        <a href="https://scidroid.me/" target="_blank" rel="noopener noreferrer"
+          >Portfolio</a
+        ><a href="https://dev.to/" target="_blank" rel="noopener noreferrer"
+          >Blog</a
+        ><a
+          href="https://scidroid.me/estructura"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Estructura HTML</a
+        ><a
+          href="https://platzi.com/r/scidroid"
+          target="_blank"
+          rel="noopener noreferrer"
+          >1 aditional free month Platzi</a
+        >
+      </section>
+      <section id="newsletter">
+        <h2>Subscribe to the newsletter!</h2>
+        <form action="https://r.scidroid.me/add_subscriber" name="newsletter-form" method="post" target="_blank">
+          <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            autocomplete="name"
+            placeholder="Sofía"
+          /></div><div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            autocomplete="email"
+            placeholder="scidroid@scidroid.me"
+            required
+          /><div class="form-group">
+          <input type="submit" id="submit" value="Submit">
+        </form>
+      </section>
     </main>
     <footer>
       <p>
@@ -62,5 +148,6 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
+    <script src="./index.js"></script>
   </body>
 </html>
