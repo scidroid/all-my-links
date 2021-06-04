@@ -3,7 +3,7 @@ const container = document.querySelector(".blog");
 const addElement = (title, url) => {
   container.insertAdjacentHTML(
     "beforeend",
-    `<a href="${url}" target="_blank" rel="noopener noreferrer">${title}</a>`
+    `<a href="${url}" class="links" target="_blank" rel="noopener noreferrer">${title}</a>`
   );
 };
 
