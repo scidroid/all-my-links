@@ -1,79 +1,138 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
 }
 
 html {
   font-size: 62.5%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
 }
 
-header,
-main,
-footer {
-  max-width: 300px;
-  margin: auto auto;
+body {
+  background-color: var(--dark-cyan);
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
-figure {
-  margin: auto auto;
+header {
+  justify-self: center;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  max-width: 400px;
+  min-width: 280px;
+  align-content: center;
+  margin: 75px 75px 30px 75px;
 }
 
-header figure img {
-  width: 215px;
-  margin: 15px;
-  border: black solid 1px;
-  border-radius: 500px;
+header figure {
+  display: flex;
+  padding: 15px;
+}
+
+header img {
+  margin: auto auto;
+  border-radius: 50%;
+  width: 160px;
 }
 
 h1 {
   text-align: center;
+  padding-top: 5px;
+  padding-bottom: 2px;
+  font-size: 2.3rem;
 }
 
-footer p {
-  margin: auto auto;
-  padding: 25px;
+header p {
   font-size: 1.5rem;
-}
-
-main h2 {
-  margin: 15px;
   text-align: center;
-  font-size: 1.8rem;
+  padding-bottom: 7px;
 }
 
-ul {
+header h2 {
+  text-align: center;
+  margin-left: 75px;
+  margin-right: 75px;
+}
+
+nav ul {
+  margin: 15px;
+  display: flex;
   list-style: none;
+  justify-content: center;
 }
 
-.buttons {
-  border-radius: 20px;
-  padding: 15px;
-  text-align: center;
-  margin: 15px;
+nav li {
   text-decoration: none;
-  font-size: 3rem;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
-#gh, #dv {
-  border: black solid 1px;
+nav li a {
+  font-size: 2rem;
+}
+
+section {
+  justify-self: center;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  max-width: 400px;
+  min-width: 280px;
+  align-content: center;
+  padding: 15px;
+  margin: 15px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+section a {
+  font-size: 2rem;
+  margin: 10px;
+  padding: 12px;
   color: black;
+  text-align: center;
+  text-decoration: none;
+  border: 2px black solid;
+  border-radius: 15px;
+  font-weight: 700;
 }
 
-#wb {
-  border: #1b1b1b solid 1px;
-  color: #1b1b1b;
+#newsletter form, .form-group {
+    display: flex;
+    flex-direction: column;
 }
 
-#tw {
-  border: aqua solid 1px;
-  color: aqua;
+.form-group {
+    margin: 5px;
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
 }
 
-#em {
-  border: black solid 1px;
-  color: black;
+.form-group input {
+    border: 2px black solid;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 2rem;
+    background-color: white;
+}
+
+footer {
+  font-size: 1.7rem;
+  margin-bottom: 75px;
 }
